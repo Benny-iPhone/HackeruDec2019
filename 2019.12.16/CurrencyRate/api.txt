@@ -1,0 +1,8 @@
+fixer.io
+
+benny@grr.la
+Aa123456
+
+sample:
+
+http://data.fixer.io/api/latest?access_key=e54fd9fd13563bbe132644f20eb06de7
