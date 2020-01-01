@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HomeworkAngle" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="type an angle" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G8V-Hv-Crd">
+                                <rect key="frame" x="16" y="60" width="382" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="angleTextFieldEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="X8T-No-ZWd"/>
+                                </connections>
+                            </textField>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="paj-rX-O3l">
+                                <rect key="frame" x="45" y="438" width="324" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="5jX-DT-Lzw"/>
+                                </constraints>
+                                <color key="thumbTintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="G8V-Hv-Crd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="STi-df-Ja4"/>
+                            <constraint firstItem="G8V-Hv-Crd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="afU-v6-NsR"/>
+                            <constraint firstItem="paj-rX-O3l" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="bRz-E2-cns"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="G8V-Hv-Crd" secondAttribute="trailing" constant="16" id="d3S-Cw-94X"/>
+                            <constraint firstItem="paj-rX-O3l" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="oUP-9M-9gw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="sXy-Av-SbE" appends="YES" id="cF8-Tv-oGQ"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="slider" destination="paj-rX-O3l" id="J9Y-rK-hDI"/>
+                        <outlet property="textField" destination="G8V-Hv-Crd" id="cZA-f3-2E1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="sXy-Av-SbE">
+                    <connections>
+                        <action selector="closeKeyboardAction:" destination="BYZ-38-t0r" id="3b9-8V-HDg"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="139" y="104"/>
+        </scene>
+    </scenes>
+</document>
