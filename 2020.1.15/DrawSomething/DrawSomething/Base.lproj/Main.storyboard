@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DrawSomething" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="urY-7r-2Ul">
+                                <rect key="frame" x="0.0" y="813" width="414" height="49"/>
+                                <items>
+                                    <barButtonItem systemItem="trash" id="BSO-zc-nAr">
+                                        <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="trashAction:" destination="BYZ-38-t0r" id="BZd-VQ-dgk"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="2dY-zP-d2y"/>
+                                    <barButtonItem style="plain" id="MTT-dy-8QT">
+                                        <slider key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="10" id="7XT-vs-ksr">
+                                            <rect key="frame" x="148" y="10" width="118" height="34"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <connections>
+                                                <action selector="strokeWidthAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="nXe-qv-CJd"/>
+                                            </connections>
+                                        </slider>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="2EG-Bl-0UO"/>
+                                    <barButtonItem title="Color" id="Ej4-Oj-Ko5">
+                                        <connections>
+                                            <segue destination="W9U-t3-8fS" kind="show" id="5IK-xd-VZB"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="STR-Pf-UKR" customClass="DrawView" customModule="DrawSomething" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="urY-7r-2Ul" secondAttribute="bottom" id="GOp-Zw-ppe"/>
+                            <constraint firstItem="STR-Pf-UKR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="MaY-Ty-sdh"/>
+                            <constraint firstItem="urY-7r-2Ul" firstAttribute="top" secondItem="STR-Pf-UKR" secondAttribute="bottom" id="Q4S-N5-7gp"/>
+                            <constraint firstItem="urY-7r-2Ul" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="UxP-ga-2TS"/>
+                            <constraint firstItem="STR-Pf-UKR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bUZ-53-InC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="STR-Pf-UKR" secondAttribute="trailing" id="luJ-7Z-s31"/>
+                            <constraint firstItem="urY-7r-2Ul" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="mdg-U5-Jwd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="drawView" destination="STR-Pf-UKR" id="pcA-42-j2T"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="93"/>
+        </scene>
+        <!--Color Picker View Controller-->
+        <scene sceneID="Kxy-pO-EKC">
+            <objects>
+                <viewController modalPresentationStyle="overCurrentContext" id="W9U-t3-8fS" customClass="ColorPickerViewController" customModule="DrawSomething" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mpZ-wj-1Ho">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LQa-bU-xGT">
+                                <rect key="frame" x="128" y="373" width="158" height="160"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="RRI-2l-w8U">
+                                        <rect key="frame" x="20" y="20" width="118" height="120"/>
+                                        <subviews>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="yZG-MY-tsa">
+                                                <rect key="frame" x="-2" y="0.0" width="122" height="31"/>
+                                                <color key="minimumTrackTintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="thumbTintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="sliderAction" destination="W9U-t3-8fS" eventType="valueChanged" id="PVV-ds-zkc"/>
+                                                </connections>
+                                            </slider>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="iJa-Cu-MXq">
+                                                <rect key="frame" x="-2" y="45" width="122" height="31"/>
+                                                <color key="minimumTrackTintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="thumbTintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="sliderAction" destination="W9U-t3-8fS" eventType="valueChanged" id="EoS-AB-Slt"/>
+                                                </connections>
+                                            </slider>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="OSh-U8-wDL">
+                                                <rect key="frame" x="-2" y="90" width="122" height="31"/>
+                                                <color key="minimumTrackTintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="thumbTintColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="sliderAction" destination="W9U-t3-8fS" eventType="valueChanged" id="M2m-JS-8p7"/>
+                                                </connections>
+                                            </slider>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="118" id="Qqv-5U-IDG"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="RRI-2l-w8U" firstAttribute="top" secondItem="LQa-bU-xGT" secondAttribute="top" constant="20" id="BSk-HM-7Ff"/>
+                                    <constraint firstAttribute="bottom" secondItem="RRI-2l-w8U" secondAttribute="bottom" constant="20" id="CL3-T4-v3i"/>
+                                    <constraint firstAttribute="trailing" secondItem="RRI-2l-w8U" secondAttribute="trailing" constant="20" id="WOM-er-Pbd"/>
+                                    <constraint firstItem="RRI-2l-w8U" firstAttribute="leading" secondItem="LQa-bU-xGT" secondAttribute="leading" constant="20" id="izO-Nk-L8Q"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="LQa-bU-xGT" firstAttribute="centerX" secondItem="KCu-Kk-9jf" secondAttribute="centerX" id="6nd-2L-fnR"/>
+                            <constraint firstItem="LQa-bU-xGT" firstAttribute="centerY" secondItem="KCu-Kk-9jf" secondAttribute="centerY" id="coM-WX-968"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KCu-Kk-9jf"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="3yz-sd-NgC" appends="YES" id="fL6-xy-6t3"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="UpQ-tu-6Vn"/>
+                    <connections>
+                        <outlet property="bgView" destination="LQa-bU-xGT" id="woS-L7-Dii"/>
+                        <outlet property="blueSlider" destination="OSh-U8-wDL" id="ojI-o8-xNK"/>
+                        <outlet property="greenSlider" destination="iJa-Cu-MXq" id="0cK-54-P0o"/>
+                        <outlet property="redSlider" destination="yZG-MY-tsa" id="u4H-Qn-kTr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e7h-ew-IoV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="3yz-sd-NgC">
+                    <connections>
+                        <action selector="tapAction:" destination="W9U-t3-8fS" id="jsL-kD-A0i"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1059" y="92"/>
+        </scene>
+    </scenes>
+</document>
