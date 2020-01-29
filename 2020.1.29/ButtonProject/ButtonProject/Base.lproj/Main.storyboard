@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ButtonProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ako-Z7-0qj">
+                                <rect key="frame" x="16" y="60" width="382" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="oEN-kC-RLK"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="uKs-Af-Wuz">
+                                <rect key="frame" x="16" y="212" width="382" height="31"/>
+                                <subviews>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XcM-rO-sgw">
+                                        <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
+                                        <connections>
+                                            <action selector="switchAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="kVv-fS-NcL"/>
+                                        </connections>
+                                    </switch>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I Accept the terms of use" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Moe-lu-gRq">
+                                        <rect key="frame" x="61" y="0.0" width="321" height="31"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9NP-ED-udt">
+                                <rect key="frame" x="146" y="267" width="122" height="34"/>
+                                <state key="normal" title="Custom Button">
+                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t2U-qi-lEt">
+                                <rect key="frame" x="158" y="325" width="98" height="30"/>
+                                <state key="normal" title="Accept Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rdr-EA-QeP">
+                                <rect key="frame" x="16" y="259" width="50" height="50"/>
+                                <color key="tintColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="icons8-minion"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BwU-E2-Khf">
+                                <rect key="frame" x="49" y="329" width="19" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="tornado" catalog="system"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="t2U-qi-lEt" firstAttribute="centerX" secondItem="9NP-ED-udt" secondAttribute="centerX" id="2o7-HU-U5R"/>
+                            <constraint firstItem="9NP-ED-udt" firstAttribute="top" secondItem="uKs-Af-Wuz" secondAttribute="bottom" constant="24" id="3g1-wP-Ht9"/>
+                            <constraint firstItem="uKs-Af-Wuz" firstAttribute="leading" secondItem="ako-Z7-0qj" secondAttribute="leading" id="HfH-an-77i"/>
+                            <constraint firstItem="9NP-ED-udt" firstAttribute="centerX" secondItem="uKs-Af-Wuz" secondAttribute="centerX" id="Lnj-rQ-5Br"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ako-Z7-0qj" secondAttribute="trailing" constant="16" id="QAi-Iw-qgI"/>
+                            <constraint firstItem="t2U-qi-lEt" firstAttribute="top" secondItem="9NP-ED-udt" secondAttribute="bottom" constant="24" id="TUo-0i-vIV"/>
+                            <constraint firstItem="Rdr-EA-QeP" firstAttribute="centerY" secondItem="9NP-ED-udt" secondAttribute="centerY" id="c6M-36-0r8"/>
+                            <constraint firstItem="uKs-Af-Wuz" firstAttribute="top" secondItem="ako-Z7-0qj" secondAttribute="bottom" constant="24" id="cQs-pM-B6z"/>
+                            <constraint firstItem="ako-Z7-0qj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="eL0-zt-4l8"/>
+                            <constraint firstItem="ako-Z7-0qj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="k1g-cN-Loj"/>
+                            <constraint firstItem="Rdr-EA-QeP" firstAttribute="leading" secondItem="uKs-Af-Wuz" secondAttribute="leading" id="oNC-xk-xky"/>
+                            <constraint firstItem="uKs-Af-Wuz" firstAttribute="trailing" secondItem="ako-Z7-0qj" secondAttribute="trailing" id="wFG-l7-6Yz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="customStyleButton" destination="9NP-ED-udt" id="PNp-1E-lUq"/>
+                        <outlet property="systemStyleButton" destination="t2U-qi-lEt" id="xgy-nS-fJz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="93"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icons8-minion" width="50" height="50"/>
+        <image name="tornado" catalog="system" width="58" height="64"/>
+    </resources>
+</document>
