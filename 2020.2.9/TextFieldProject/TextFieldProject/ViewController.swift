@@ -10,12 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var birthDateTextField: DatePickerTextField!
     @IBOutlet weak var stackViewTopLayout: NSLayoutConstraint!
     @IBOutlet weak var stackView: UIStackView!
     @IBOutlet weak var nameTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        birthDateTextField.date = Date(timeIntervalSinceNow: -86_400 * 60)
         
         //open keyboard
         nameTextField.becomeFirstResponder()
