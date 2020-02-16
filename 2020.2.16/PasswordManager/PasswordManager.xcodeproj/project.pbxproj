@@ -1,0 +1,457 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7FA8B3440A50ADDE0296F826 /* Pods_PasswordManager.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D86FCCA73B15AEFAFCAC6D5 /* Pods_PasswordManager.framework */; };
+		AE561B4F23F99B4100A2A59D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE561B4E23F99B4100A2A59D /* AppDelegate.swift */; };
+		AE561B5123F99B4100A2A59D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE561B5023F99B4100A2A59D /* SceneDelegate.swift */; };
+		AE561B5323F99B4100A2A59D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE561B5223F99B4100A2A59D /* ViewController.swift */; };
+		AE561B5623F99B4100A2A59D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE561B5423F99B4100A2A59D /* Main.storyboard */; };
+		AE561B5823F99B4200A2A59D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE561B5723F99B4200A2A59D /* Assets.xcassets */; };
+		AE561B5B23F99B4200A2A59D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE561B5923F99B4200A2A59D /* LaunchScreen.storyboard */; };
+		AE561B6423F9A03700A2A59D /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE561B6323F9A03700A2A59D /* DBManager.swift */; };
+		AE561B6623F9A35300A2A59D /* PasswordItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE561B6523F9A35300A2A59D /* PasswordItem.swift */; };
+		AE561B6923F9A57700A2A59D /* PasswordItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE561B6823F9A57700A2A59D /* PasswordItemViewController.swift */; };
+		AE561B6B23F9B47300A2A59D /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE561B6A23F9B47300A2A59D /* ItemsViewController.swift */; };
+		AE561B6E23F9BB7B00A2A59D /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE561B6D23F9BB7B00A2A59D /* ItemCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1BA0EDC5FCF9E902662FA191 /* Pods-PasswordManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PasswordManager.release.xcconfig"; path = "Target Support Files/Pods-PasswordManager/Pods-PasswordManager.release.xcconfig"; sourceTree = "<group>"; };
+		4D86FCCA73B15AEFAFCAC6D5 /* Pods_PasswordManager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PasswordManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BC2985BF8DB04AACD1A98E6 /* Pods-PasswordManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PasswordManager.debug.xcconfig"; path = "Target Support Files/Pods-PasswordManager/Pods-PasswordManager.debug.xcconfig"; sourceTree = "<group>"; };
+		AE561B4B23F99B4100A2A59D /* PasswordManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasswordManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE561B4E23F99B4100A2A59D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AE561B5023F99B4100A2A59D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AE561B5223F99B4100A2A59D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AE561B5523F99B4100A2A59D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AE561B5723F99B4200A2A59D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE561B5A23F99B4200A2A59D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AE561B5C23F99B4200A2A59D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE561B6323F9A03700A2A59D /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
+		AE561B6523F9A35300A2A59D /* PasswordItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordItem.swift; sourceTree = "<group>"; };
+		AE561B6823F9A57700A2A59D /* PasswordItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordItemViewController.swift; sourceTree = "<group>"; };
+		AE561B6A23F9B47300A2A59D /* ItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
+		AE561B6D23F9BB7B00A2A59D /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE561B4823F99B4100A2A59D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FA8B3440A50ADDE0296F826 /* Pods_PasswordManager.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D5CAA5602F86EBA0C8D57EA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5BC2985BF8DB04AACD1A98E6 /* Pods-PasswordManager.debug.xcconfig */,
+				1BA0EDC5FCF9E902662FA191 /* Pods-PasswordManager.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		41D8B7464A1118A2C552C9D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D86FCCA73B15AEFAFCAC6D5 /* Pods_PasswordManager.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE561B4223F99B4100A2A59D = {
+			isa = PBXGroup;
+			children = (
+				AE561B4D23F99B4100A2A59D /* PasswordManager */,
+				AE561B4C23F99B4100A2A59D /* Products */,
+				0D5CAA5602F86EBA0C8D57EA /* Pods */,
+				41D8B7464A1118A2C552C9D0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AE561B4C23F99B4100A2A59D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE561B4B23F99B4100A2A59D /* PasswordManager.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE561B4D23F99B4100A2A59D /* PasswordManager */ = {
+			isa = PBXGroup;
+			children = (
+				AE561B6C23F9BACE00A2A59D /* View */,
+				AE561B6723F9A53900A2A59D /* View Controllers */,
+				AE561B6223F9A00700A2A59D /* Model */,
+				AE561B4E23F99B4100A2A59D /* AppDelegate.swift */,
+				AE561B5023F99B4100A2A59D /* SceneDelegate.swift */,
+				AE561B5223F99B4100A2A59D /* ViewController.swift */,
+				AE561B5423F99B4100A2A59D /* Main.storyboard */,
+				AE561B5723F99B4200A2A59D /* Assets.xcassets */,
+				AE561B5923F99B4200A2A59D /* LaunchScreen.storyboard */,
+				AE561B5C23F99B4200A2A59D /* Info.plist */,
+			);
+			path = PasswordManager;
+			sourceTree = "<group>";
+		};
+		AE561B6223F9A00700A2A59D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AE561B6323F9A03700A2A59D /* DBManager.swift */,
+				AE561B6523F9A35300A2A59D /* PasswordItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		AE561B6723F9A53900A2A59D /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AE561B6823F9A57700A2A59D /* PasswordItemViewController.swift */,
+				AE561B6A23F9B47300A2A59D /* ItemsViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		AE561B6C23F9BACE00A2A59D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AE561B6D23F9BB7B00A2A59D /* ItemCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE561B4A23F99B4100A2A59D /* PasswordManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE561B5F23F99B4200A2A59D /* Build configuration list for PBXNativeTarget "PasswordManager" */;
+			buildPhases = (
+				98810CB9D1B860C9E91D2A44 /* [CP] Check Pods Manifest.lock */,
+				AE561B4723F99B4100A2A59D /* Sources */,
+				AE561B4823F99B4100A2A59D /* Frameworks */,
+				AE561B4923F99B4100A2A59D /* Resources */,
+				9A04852B5AE4BD63DFE6318B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PasswordManager;
+			productName = PasswordManager;
+			productReference = AE561B4B23F99B4100A2A59D /* PasswordManager.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE561B4323F99B4100A2A59D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = hackeru;
+				TargetAttributes = {
+					AE561B4A23F99B4100A2A59D = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = AE561B4623F99B4100A2A59D /* Build configuration list for PBXProject "PasswordManager" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE561B4223F99B4100A2A59D;
+			productRefGroup = AE561B4C23F99B4100A2A59D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE561B4A23F99B4100A2A59D /* PasswordManager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE561B4923F99B4100A2A59D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE561B5B23F99B4200A2A59D /* LaunchScreen.storyboard in Resources */,
+				AE561B5823F99B4200A2A59D /* Assets.xcassets in Resources */,
+				AE561B5623F99B4100A2A59D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		98810CB9D1B860C9E91D2A44 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PasswordManager-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A04852B5AE4BD63DFE6318B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PasswordManager/Pods-PasswordManager-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PasswordManager/Pods-PasswordManager-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PasswordManager/Pods-PasswordManager-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE561B4723F99B4100A2A59D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE561B6E23F9BB7B00A2A59D /* ItemCell.swift in Sources */,
+				AE561B5323F99B4100A2A59D /* ViewController.swift in Sources */,
+				AE561B4F23F99B4100A2A59D /* AppDelegate.swift in Sources */,
+				AE561B5123F99B4100A2A59D /* SceneDelegate.swift in Sources */,
+				AE561B6623F9A35300A2A59D /* PasswordItem.swift in Sources */,
+				AE561B6B23F9B47300A2A59D /* ItemsViewController.swift in Sources */,
+				AE561B6923F9A57700A2A59D /* PasswordItemViewController.swift in Sources */,
+				AE561B6423F9A03700A2A59D /* DBManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AE561B5423F99B4100A2A59D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE561B5523F99B4100A2A59D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AE561B5923F99B4200A2A59D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE561B5A23F99B4200A2A59D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE561B5D23F99B4200A2A59D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AE561B5E23F99B4200A2A59D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE561B6023F99B4200A2A59D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BC2985BF8DB04AACD1A98E6 /* Pods-PasswordManager.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S3VXA7W346;
+				INFOPLIST_FILE = PasswordManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.il.hackeru.PasswordManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AE561B6123F99B4200A2A59D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BA0EDC5FCF9E902662FA191 /* Pods-PasswordManager.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S3VXA7W346;
+				INFOPLIST_FILE = PasswordManager/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.il.hackeru.PasswordManager;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE561B4623F99B4100A2A59D /* Build configuration list for PBXProject "PasswordManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE561B5D23F99B4200A2A59D /* Debug */,
+				AE561B5E23F99B4200A2A59D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE561B5F23F99B4200A2A59D /* Build configuration list for PBXNativeTarget "PasswordManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE561B6023F99B4200A2A59D /* Debug */,
+				AE561B6123F99B4200A2A59D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE561B4323F99B4100A2A59D /* Project object */;
+}
