@@ -1,0 +1,415 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		320881C489AF7024480E83B2 /* Pods_BurgerMenuApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61D4D054EA79BA3258497D34 /* Pods_BurgerMenuApp.framework */; };
+		AE7E461B2415728E000B2EE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7E461A2415728E000B2EE8 /* AppDelegate.swift */; };
+		AE7E461D2415728E000B2EE8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7E461C2415728E000B2EE8 /* SceneDelegate.swift */; };
+		AE7E461F2415728E000B2EE8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7E461E2415728E000B2EE8 /* ViewController.swift */; };
+		AE7E46222415728E000B2EE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE7E46202415728E000B2EE8 /* Main.storyboard */; };
+		AE7E462424157290000B2EE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE7E462324157290000B2EE8 /* Assets.xcassets */; };
+		AE7E462724157290000B2EE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE7E462524157290000B2EE8 /* LaunchScreen.storyboard */; };
+		AE7E462F2415751B000B2EE8 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE7E462E2415751B000B2EE8 /* MenuTableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3E3F24C3A3DE471155F71042 /* Pods-BurgerMenuApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BurgerMenuApp.debug.xcconfig"; path = "Target Support Files/Pods-BurgerMenuApp/Pods-BurgerMenuApp.debug.xcconfig"; sourceTree = "<group>"; };
+		61D4D054EA79BA3258497D34 /* Pods_BurgerMenuApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BurgerMenuApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE7E46172415728D000B2EE8 /* BurgerMenuApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BurgerMenuApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE7E461A2415728E000B2EE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AE7E461C2415728E000B2EE8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AE7E461E2415728E000B2EE8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AE7E46212415728E000B2EE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AE7E462324157290000B2EE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AE7E462624157290000B2EE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AE7E462824157290000B2EE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE7E462E2415751B000B2EE8 /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		DC26A3A7685CA5F74103D64A /* Pods-BurgerMenuApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BurgerMenuApp.release.xcconfig"; path = "Target Support Files/Pods-BurgerMenuApp/Pods-BurgerMenuApp.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AE7E46142415728D000B2EE8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				320881C489AF7024480E83B2 /* Pods_BurgerMenuApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		51ABA3791FA571B2384E1CF2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61D4D054EA79BA3258497D34 /* Pods_BurgerMenuApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE7E460E2415728D000B2EE8 = {
+			isa = PBXGroup;
+			children = (
+				AE7E46192415728E000B2EE8 /* BurgerMenuApp */,
+				AE7E46182415728D000B2EE8 /* Products */,
+				BF47A606D7C61E1EF9D8D7B9 /* Pods */,
+				51ABA3791FA571B2384E1CF2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AE7E46182415728D000B2EE8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AE7E46172415728D000B2EE8 /* BurgerMenuApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE7E46192415728E000B2EE8 /* BurgerMenuApp */ = {
+			isa = PBXGroup;
+			children = (
+				AE7E461A2415728E000B2EE8 /* AppDelegate.swift */,
+				AE7E461C2415728E000B2EE8 /* SceneDelegate.swift */,
+				AE7E461E2415728E000B2EE8 /* ViewController.swift */,
+				AE7E462E2415751B000B2EE8 /* MenuTableViewController.swift */,
+				AE7E46202415728E000B2EE8 /* Main.storyboard */,
+				AE7E462324157290000B2EE8 /* Assets.xcassets */,
+				AE7E462524157290000B2EE8 /* LaunchScreen.storyboard */,
+				AE7E462824157290000B2EE8 /* Info.plist */,
+			);
+			path = BurgerMenuApp;
+			sourceTree = "<group>";
+		};
+		BF47A606D7C61E1EF9D8D7B9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3E3F24C3A3DE471155F71042 /* Pods-BurgerMenuApp.debug.xcconfig */,
+				DC26A3A7685CA5F74103D64A /* Pods-BurgerMenuApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AE7E46162415728D000B2EE8 /* BurgerMenuApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE7E462B24157290000B2EE8 /* Build configuration list for PBXNativeTarget "BurgerMenuApp" */;
+			buildPhases = (
+				6D45E009F1CB12A5C3C886FD /* [CP] Check Pods Manifest.lock */,
+				AE7E46132415728D000B2EE8 /* Sources */,
+				AE7E46142415728D000B2EE8 /* Frameworks */,
+				AE7E46152415728D000B2EE8 /* Resources */,
+				102DADE17C559E5DA1EA4A72 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BurgerMenuApp;
+			productName = BurgerMenuApp;
+			productReference = AE7E46172415728D000B2EE8 /* BurgerMenuApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AE7E460F2415728D000B2EE8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = hackeru;
+				TargetAttributes = {
+					AE7E46162415728D000B2EE8 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = AE7E46122415728D000B2EE8 /* Build configuration list for PBXProject "BurgerMenuApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AE7E460E2415728D000B2EE8;
+			productRefGroup = AE7E46182415728D000B2EE8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AE7E46162415728D000B2EE8 /* BurgerMenuApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AE7E46152415728D000B2EE8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE7E462724157290000B2EE8 /* LaunchScreen.storyboard in Resources */,
+				AE7E462424157290000B2EE8 /* Assets.xcassets in Resources */,
+				AE7E46222415728E000B2EE8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		102DADE17C559E5DA1EA4A72 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BurgerMenuApp/Pods-BurgerMenuApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BurgerMenuApp/Pods-BurgerMenuApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BurgerMenuApp/Pods-BurgerMenuApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D45E009F1CB12A5C3C886FD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BurgerMenuApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AE7E46132415728D000B2EE8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE7E462F2415751B000B2EE8 /* MenuTableViewController.swift in Sources */,
+				AE7E461F2415728E000B2EE8 /* ViewController.swift in Sources */,
+				AE7E461B2415728E000B2EE8 /* AppDelegate.swift in Sources */,
+				AE7E461D2415728E000B2EE8 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AE7E46202415728E000B2EE8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE7E46212415728E000B2EE8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AE7E462524157290000B2EE8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE7E462624157290000B2EE8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AE7E462924157290000B2EE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AE7E462A24157290000B2EE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AE7E462C24157290000B2EE8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E3F24C3A3DE471155F71042 /* Pods-BurgerMenuApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BurgerMenuApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.il.hackeru.BurgerMenuApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AE7E462D24157290000B2EE8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC26A3A7685CA5F74103D64A /* Pods-BurgerMenuApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BurgerMenuApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.il.hackeru.BurgerMenuApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AE7E46122415728D000B2EE8 /* Build configuration list for PBXProject "BurgerMenuApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE7E462924157290000B2EE8 /* Debug */,
+				AE7E462A24157290000B2EE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE7E462B24157290000B2EE8 /* Build configuration list for PBXNativeTarget "BurgerMenuApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE7E462C24157290000B2EE8 /* Debug */,
+				AE7E462D24157290000B2EE8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AE7E460F2415728D000B2EE8 /* Project object */;
+}
