@@ -1,0 +1,49 @@
+# Process - Application
+Different Application in background = Different Process
+
+# Thread - functionality Flow,
+Process has Threads.
+
+Threads are limited. Depending on Operation System.
+
+# Main Thread - A Designated Thread for UI Operation
+
+Other Thread
+
+Networking thread
+Database thread
+Logging Thread
+
+Short Async operation.
+
+# Operation Queue
+GCD - Grand Central Dispatch
+
+2 types of operation Queue
+- Serial (one by one) => Only 1 Thread can execute operations at a given time
+For Main Queue => Only Main Thread executes its operation
+- Concurrent (parallel) => More than 1 Queue can execute its operations
+
+=====
+Sharing is Caring
+=====
+
+Processes - Share hard drive files. OS stuff (clipboard)
+Thread - hard drive files, OS stuff, heap memory
+
+func doSomething() {
+  var num = 3 //stack
+}
+
+if 2 threads invoke 'doSomething()' each one own Different 'num'.
+
+class DBManager {
+  static let manager = DBManager()
+
+  var dbVersion : String = "1.0"
+}
+
+DBManager instance, and its properties, are in the heap, both thread can read and write.
+
+One more Example:
+a long init Process, can occur more than once when using multiple threads.
