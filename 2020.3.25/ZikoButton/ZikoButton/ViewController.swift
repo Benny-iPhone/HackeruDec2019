@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController , UICollectionViewDelegateFlowLayout{
 
     var timerRemainingOperations : Int = 0
     weak var operationTimer : Timer?
